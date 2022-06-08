@@ -44,57 +44,22 @@ dev_import:
 	@docker-compose -f $(COMPOSE_FILE_DEV) exec -T country_profile python manage.py loaddata $(import_file)
 
 
-## docker-compose API
-api_build:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility build
-	@docker tag $(IMAGE_TAG) $(TAG_LATEST)
-
-api_up:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility up -d
-
-api_run:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility up
-
-api_logs:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility logs -f
-
-api_stop:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility stop
-
-api_ps:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility ps
-
-api_rm:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility rm -f
-
-api_exec_shell:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility exec country_profile_api sh
-
-api_exec_collectstatic:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility exec -T country_profile_api python manage.py collectstatic --noinput
-
-api_exec_webserver:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility exec webserver sh
-
-api_make_test:
-	@docker-compose -f $(COMPOSE_FILE_API) --compatibility exec -T country_profile_api make test
-
 ## docker-compose prod
 prod_build:
 	@docker-compose --compatibility build
 	@docker tag $(IMAGE_TAG) $(TAG_LATEST)
 
-prod_up:
-	@docker-compose --compatibility up -d
-
 prod_run:
 	@docker-compose --compatibility up
 
-prod_logs:
-	@docker-compose --compatibility logs -f
+prod_start:
+	@docker-compose --compatibility up -d
 
 prod_stop:
 	@docker-compose --compatibility stop
+
+prod_logs:
+	@docker-compose --compatibility logs -f
 
 prod_ps:
 	@docker-compose --compatibility ps
@@ -103,16 +68,13 @@ prod_rm:
 	@docker-compose --compatibility rm -f
 
 prod_exec_shell:
-	@docker-compose --compatibility exec country_profile sh
+	@docker-compose --compatibility exec country_profile_app sh
 
 prod_exec_collectstatic:
-	@docker-compose --compatibility exec -T country_profile python manage.py collectstatic --noinput
+	@docker-compose --compatibility exec -T country_profile_app python manage.py collectstatic --noinput
 
 prod_import:
-	@docker-compose --compatibility exec -T country_profile python manage.py loaddata $(import_file)
-
-prod_exec_webserver:
-	@docker-compose --compatibility exec webserver sh
+	@docker-compose --compatibility exec -T country_profile_app python manage.py loaddata $(import_file)
 
 prod_make_test:
-	@docker-compose --compatibility exec -T country_profile make test
+	@docker-compose --compatibility exec -T country_profile_app make test
