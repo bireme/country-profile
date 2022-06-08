@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  country_profile:
+    container_name: country-profile
+    build:
+      context: .
+      target: dev
+    ports:
+      - 8000:8000
+    volumes:
+      - ./app/:/app/
+    env_file:
+      - ./conf/app-env
+    command: python manage.py runserver 0.0.0.0:8000
+    networks:
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true

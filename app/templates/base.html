@@ -1,0 +1,49 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="autor" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" sizes="192x192">
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<title>{% block "title" %}{% endblock %}{% trans "Pharmaceutical and Health Technology Country Profile" %}</title>
+
+    {% if GOOGLE_ANALYTICS_ID %}
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{GOOGLE_ANALYTICS_ID}}"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '{{GOOGLE_ANALYTICS_ID}}');
+        </script>
+    {% endif %}
+
+    {% block "extrahead" %}{% endblock %}
+</head>
+<body>
+    {% include "top.html" %}
+    <section class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="{{HOME_URL}}">Home</a></li>
+				<li class="breadcrumb-item"><a href="{{PORTAL_URL}}">{% trans "Pharmaceutical and Health Technology Country Profile" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    {% block breadcrumb_last %}{% endblock %}
+                </li>
+			</ol>
+		</nav>
+        {% block "content" %}{% endblock %}
+    </section>
+    {% block "extracontent" %}{% endblock %}
+
+    {% include "footer.html" %}
+    {% block "extrafooter" %}{% endblock %}
+</body>
+
+</html>
