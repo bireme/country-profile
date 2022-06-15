@@ -22,6 +22,14 @@ class DomainAdmin(admin.ModelAdmin):
     search_fields = list_display = ['name']
 
 
+class ProfileLocalAdmin(admin.TabularInline):
+    model = ProfileLocal
+    extra = 0
+
+class ProfileAdmin(admin.ModelAdmin):
+    model = Profile
+    inlines = [ProfileLocalAdmin,]
+
 
 class IndicatorLocalAdmin(admin.TabularInline):
     model = IndicatorLocal
@@ -31,6 +39,7 @@ class IndicatorAdmin(admin.ModelAdmin):
     model = Indicator
     inlines = [IndicatorLocalAdmin,]
     search_fields = list_display = ['code', 'name']
+    ordering = ('code',)
 
 class CountryIndicatorData(admin.TabularInline):
     model = CountryIndicatorData
@@ -45,7 +54,7 @@ class CountryIndicatorAdmin(admin.ModelAdmin):
 admin.site.register(Country, CountryAdmin)
 admin.site.register(Domain, DomainAdmin)
 admin.site.register(Indicator, IndicatorAdmin)
-admin.site.register(Profile)
+admin.site.register(Profile, ProfileAdmin)
 admin.site.register(CountryIndicator, CountryIndicatorAdmin)
 
 

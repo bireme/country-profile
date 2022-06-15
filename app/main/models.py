@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _, get_language
 from django.core.validators import MinValueValidator, MaxValueValidator
+from tinymce.models import HTMLField
 
 from main import choices
 
@@ -115,9 +116,20 @@ class Profile(models.Model):
         verbose_name_plural = "Profiles"
 
     country = models.ForeignKey(Country, verbose_name=_('Country'), on_delete=models.PROTECT)
+    description = HTMLField()
 
     def __str__(self):
         return "{}".format(self.country)
+
+
+class ProfileLocal(models.Model):
+    class Meta:
+        verbose_name = "Translation"
+        verbose_name_plural = "Translations"
+
+    profile = models.ForeignKey(Profile, verbose_name=_("profile"), on_delete=models.CASCADE)
+    language = models.CharField(_('Language'), max_length=10, choices=choices.LANGUAGES_CHOICES[1:])
+    description = HTMLField()
 
 
 class CountryIndicator(models.Model):
