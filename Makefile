@@ -40,8 +40,8 @@ dev_sh:
 dev_make_test:
 	@docker-compose -f $(COMPOSE_FILE_DEV) exec country_profile make test
 
-dev_import:
-	@docker-compose -f $(COMPOSE_FILE_DEV) exec -T country_profile python manage.py loaddata $(import_file)
+dev_makemigrations:
+	@docker-compose -f $(COMPOSE_FILE_DEV) exec -T country_profile python manage.py makemigrations
 
 
 ## docker-compose prod
@@ -73,8 +73,8 @@ prod_exec_shell:
 prod_exec_collectstatic:
 	@docker-compose --compatibility exec -T country_profile_app python manage.py collectstatic --noinput
 
-prod_import:
-	@docker-compose --compatibility exec -T country_profile_app python manage.py loaddata $(import_file)
+prod_makemigrations:
+	@docker-compose --compatibility exec -T country_profile_app python manage.py makemigrations
 
 prod_make_test:
 	@docker-compose --compatibility exec -T country_profile_app make test
