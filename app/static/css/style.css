@@ -1,0 +1,86 @@
+.padding1{
+	padding: 50px;
+}
+#header{
+	background:#2e789e ;
+	color: #fff;
+	padding: 30px;
+}
+#header-title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+#logo-opas{
+	background: #ededed;
+}
+#logo-opas img{
+	padding: 20px 0;
+}
+#lang{
+	float: right;
+	top: -30px;
+	position: absolute;
+	right: 16px;
+}
+#lang ul li{
+	list-style: none;
+	display: inline-block;
+}
+#lang a{
+	background:#30348d;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	text-decoration: none;
+}
+.lang .current-lang a{
+	background:#5256ad;
+	color: #fff;
+}
+#lang a:hover{
+	background: #9e9fc5;
+	text-decoration: none;
+}
+#footer{
+	background:#2e789e ;
+	color: #fff;
+	padding: 30px;
+}
+#footer img{
+	text-align: center;
+	font-size: 30px;
+}
+.card-modified{
+	border-left: 3px solid #fa9f3e;
+	transition: border .2s ease;
+	border-radius: 0;
+}
+.card-modified:hover{
+	border-left: 6px solid #fa9f3e;
+}
+.card-number{
+	font-size: 50px;
+	font-weight: bolder;
+	color: #fa9f3e;
+}
+.card-modified i{
+	font-size: 50px;
+	color: #999;
+}
+.nav-pills{
+	background: #eee!important;
+}
+#maps a{
+	text-decoration: none;
+}
+#maps a:hover p{
+	background: #e2e2e2;
+}
+#maps p{
+	text-decoration: none;
+	background: #eee;
+	padding: 5px 0;
+	margin-top: 10px;
+	display: block;
+}
