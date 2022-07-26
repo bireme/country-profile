@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block "title" %}{{country_data.country}} | {% endblock %}
+
+{% block "content" %}
+<main id="main_container" class="padding1">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{country_data.country}}</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-1"><img src="{% static 'img/' %}{{country_data.country.code}}-flag.jpg" class="img-fluid rounded" alt=""></div>
+            <div class="col-11"><h1>{{country_data.country}}</h1></div>
+        </div>
+        <hr class="border-primary border-3 opacity-25">
+
+        {{ country_data.description|safe }}
+
+
+        <hr class="border-primary border-3 opacity-25">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card card-modified h-100">
+                    <div class="card-body">
+                        <div class="card-number"><i class="fa-solid fa-people-group"></i> 775</div>
+                        <p class="card-text"><b>Population (in 000s)<sup>1</sup></b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-modified h-100">
+                    <div class="card-body">
+                        <div class="card-number"><i class="fa-solid fa-heart-pulse"></i> 69.8</div>
+                        <p class="card-text"><b>ife expectancy at birth (in years)<sup>2</sup></b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-modified h-100">
+                    <div class="card-body">
+                        <div class="card-number"><i class="fa-solid fa-coins"></i> 2656</div>
+                        <p class="card-text"><b>GDP (per capita in current US$)<sup>31</sup></b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-modified h-100">
+                    <div class="card-body">
+                        <div class="card-number"><i class="fa-solid fa-user-doctor"></i> 3.7</div>
+                        <p class="card-text"><b>Medical practitioners/10 000 population<sup>6</sup></b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-primary border-3 opacity-25">
+        <a href="{% url 'profile' country_data.country.code %}" class="btn btn-warning btn-lg">See complete profile</a>
+    </div>
+</main>
+
+
+{% endblock %}
