@@ -19,7 +19,7 @@ class DomainLocalAdmin(admin.TabularInline):
 class DomainAdmin(admin.ModelAdmin):
     model = Domain
     inlines = [DomainLocalAdmin,]
-    search_fields = list_display = ['name']
+    search_fields = ['name']
 
 
 class ProfileLocalAdmin(admin.TabularInline):
