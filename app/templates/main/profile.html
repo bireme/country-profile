@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load static %}
+
+{% block "title" %}{{country.name}} Profile | {% endblock %}
+
+{% block "content" %}
+<main id="main_container" class="padding1">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'country' country.code %}">{{country.name}}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+        </ol>
+        <hr class="border-primary border-3 opacity-25">
+        <div class="row">
+            <div class="col-md-8 col-lg-9 order-md-2">
+                {% for domain in domain_list %}
+                    <div class="accordion" id="descripion_{{domain.id}}">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading_{{domain.id}}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{domain.id}}" aria-expanded="true" aria-controls="collapse_{{domain.id}}">
+                                    <h2 id="d{{domain.id}}"><b>Domain {{ domain.number }}:</b> <small>{{ domain.name }}</small></h2>
+                                </button>
+                            </h2>
+                            <div id="collapse_{{domain.id}}" class="accordion-collapse collapse" aria-labelledby="heading_{{domain.id}}" data-bs-parent="#descripion_{{domain.id}}">
+                                <div class="accordion-body">
+                                    {{ domain.description }}
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br>
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>C{{ forloop.counter }}</th>
+                                <th>{{ domain.name }}</th>
+                                <th>PAHO data</th>
+                                <th>Public data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for indicator in indicator_list %}
+                                {% if indicator.domain == domain %}
+
+                                    {% if indicator.type == 2 and indicator.code|slice:"2:" == '.1' %}
+                                        <tr class="table-warning">
+                                            <td>SI</td>
+                                            <td colspan="3" class="text-center">Supplementary Indicators</td>
+                                        </tr>
+                                        <tr class="table-warning">
+                                            <td>S{{ domain.number }}</td>
+                                            <td colspan="3" class="text-center">{{ domain.name }}</td>
+                                        </tr>
+                                    {% endif %}
+                                    <tr>
+                                        <td>{{ indicator.code }}</td>
+                                        <td>{{ indicator.name }}</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+                    <!-- references
+                    <hr class="border-primary border-3 opacity-25">
+                    <div>
+                        <small>
+                            <b>References </b>
+                            <ul>
+                                <li>Population, total | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/SP.POP.TOTL?locations=GY&view=chart </li>
+                                <li>GDP (current international $) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.CD </li>
+                                <li>GDP, PPP per capita (current international $) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD  </li>
+                                <li>GHO | By category | Domestic general government health expenditure (GGHE-D) as percentage of current health expenditure (CHE) (%) - Data by country. WHO [Internet]. [cited 2018 Nov 4]; Available from: http://apps.who.int/gho/data/node.main.GHEDGGHEDCHESHA2011?lang=en </li>
+                                <li>10665/68735/WHO_EDM_PAR_2004.5.pdf?sequence=1&ua=1  </li>
+                                <li>The World Medicines Situation [Internet]. 2004 [cited 2018 Oct 31]. Available from: http://apps.who.int/iris/bitstream/handle/</li>
+                                <li>The World Medicines Situation [Internet]. 2004 [cited 2018 Oct 31]. Available from: http://apps.who.int/iris/bitstream/handle/10665/68735/WHO_EDM_PAR_2004.5.pdf?sequence=1&ua=1 </li>
+                                <li>Life expectancy at birth, total (years) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=GY</li>
+                                <li>HEALTH SITUATION [Internet]. 2018 [cited 2018 Oct 31]. Available from: http://apps.who.int/gho/data/node.cco</li>
+                                <li>WHO | Guyana. WHO [Internet]. 2018 [cited 2018 Oct 31]; Available from: http://www.who.int/countries/guy/en/  </li>
+                            </ul>
+                        </small>
+                    </div>
+                    <hr class="border-primary border-3 opacity-25">
+                    -->
+                {% endfor %}
+            </div>
+            <div class="col-md-4 col-lg-3 order-md-1 flag-title">
+                <div class="sticky-top">
+                    <div class="row">
+                        <div class="col-3"><img src="{% static 'img/' %}{{country.code}}-flag.jpg" class="img-fluid rounded" alt=""></div>
+                        <div class="col-9"><h1>{{country.name}}</h1></div>
+                    </div>
+                    <hr class="border-primary border-3 opacity-25">
+                    <ul class="nav flex-column nav-pills">
+
+                        {% for domain in domain_list %}
+                            <li class="nav-item">
+                                <a class="nav-link  {% if forloop.first %}active{% endif %}" aria-current="page" href="#d{{domain.id}}">
+                                    <b>Domain {{ domain.number }}:</b> <small>{{ domain.name }}</small>
+                                </a>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                    <br>
+                    <a aria-controls="offcanvasExample" data-bs-toggle="offcanvas" href="#offcanvasExample" class="btn btn-warning">See other country</a>
+
+                    {% include "main/select_country.html" %}
+
+                    <hr class="border-primary border-3 opacity-25">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}
