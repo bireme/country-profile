@@ -161,4 +161,8 @@ class CountryIndicatorData(models.Model):
     reference = models.CharField(_('Reference'), max_length=255, blank=True)
 
     def __str__(self):
-        return " "
+        data = self.info_text if self.info_text else '{:,}'.format(self.info_numeric) if self.info_numeric else "{}%".format(self.info_percent) if self.info_percent else ""
+
+        data_year = "{} ({})".format(data, self.year)
+
+        return data_year

@@ -2,6 +2,7 @@
 
 {% load i18n %}
 {% load static %}
+{% load app_filters %}
 
 {% block "title" %}{{country.name}} Profile | {% endblock %}
 
@@ -58,8 +59,8 @@
                                     <tr>
                                         <td>{{ indicator.code }}</td>
                                         <td>{{ indicator.name }}</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>{{ country_indicators|get_paho_data:indicator.code }}</td>
+                                        <td>{{ country_indicators|get_public_data:indicator.code }}</td>
                                     </tr>
                                 {% endif %}
                             {% endfor %}

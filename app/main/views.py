@@ -22,6 +22,10 @@ def profile_page(request, country_code):
     domain_list = Domain.objects.all().order_by('number')
     indicator_list = Indicator.objects.all()
     country = Country.objects.get(code=country_code)
+    country_indicators = CountryIndicatorData.objects.filter(country_indicator__profile__country__code=country_code)
+
+    # convert queryset to dict to use in template for get data from a specific indicator
+    country_indicators_dict = { "{}-{}".format(indicator.country_indicator.indicator.code, indicator.type): indicator for indicator in country_indicators }
 
     # sort spliting the code in parts and using the unicode value for the first part. ex. C1.5.1 -> C1 5 1
     indicator_list_sorted = sorted(indicator_list, key=lambda x: [int(part) if part.isdigit() else ord(part[0:1]) for part in x.code.split('.')])
@@ -29,6 +33,8 @@ def profile_page(request, country_code):
     response_data = {'country': country,
                     'domain_list': domain_list,
                     'indicator_list' : indicator_list_sorted,
-                    'profile_list' : profile_list}
+                    'profile_list' : profile_list,
+                    'country_indicators': country_indicators_dict
+                    }
 
     return render(request, 'main/profile.html', response_data)
