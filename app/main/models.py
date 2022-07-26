@@ -53,6 +53,7 @@ class Domain(models.Model):
         verbose_name = "Domain"
         verbose_name_plural = "Domains"
 
+    number = models.SmallIntegerField(_('Domain number'))
     name = models.CharField(_('Name'), max_length=255)
     description = models.TextField(_('Description'), blank=True)
 
@@ -65,7 +66,7 @@ class Domain(models.Model):
             if translation:
                 domain_name_local = translation[0].name
 
-        return domain_name_local
+        return "Domain {}: {}".format(self.number, domain_name_local)
 
 class DomainLocal(models.Model):
     class Meta:
