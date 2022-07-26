@@ -1,8 +1,24 @@
 {% extends "base.html" %}
+
 {% load i18n %}
+{% load static %}
 
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
-COUNTRY PROFILE LISTS
+
+
+<main id="main_container" class="padding1">
+    <div class="container">
+        <div class="row text-center" id="maps">
+            {% for profile in profile_list %}
+                <div class="col-6 col-lg-3">
+                    <a href="{% url 'country' profile.country.code %}"><img src="{% static 'img/' %}{{profile.country.code}}.jpg" alt="" class="img-fluid">
+                        <p>{{ profile.country }}</p>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
 {% endblock %}
