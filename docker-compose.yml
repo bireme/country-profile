@@ -55,7 +55,7 @@ services:
       - country_profile_app
     environment:
       - VIRTUAL_HOST=${VIRTUAL_HOST}
-      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+      - LETSENCRYPT_HOST=${VIRTUAL_HOST}
     networks:
       - nginx-proxy
     deploy:
