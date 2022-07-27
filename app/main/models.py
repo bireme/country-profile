@@ -85,7 +85,7 @@ class Indicator(models.Model):
         verbose_name_plural = "Indicators"
 
     domain = models.ForeignKey(Domain, verbose_name=_('Domain'), on_delete=models.PROTECT)
-    code = models.CharField(_('Code'), max_length=25)
+    code = models.CharField(_('Code'), max_length=25, unique=True)
     name = models.CharField(_('Name'), max_length=255)
     type = models.SmallIntegerField(_('Core/Suplementary?'), choices=INDICATOR_TYPE_CHOICES, null=True, default=1)
     internal_notes = models.TextField(_('Internal notes'), blank=True)
