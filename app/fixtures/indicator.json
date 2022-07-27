@@ -1,0 +1,1542 @@
+[
+{
+    "model": "main.indicator",
+    "pk": 2,
+    "fields": {
+        "domain": 1,
+        "code": "C1.1",
+        "name": "Population in thousand",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 3,
+    "fields": {
+        "domain": 1,
+        "code": "C1.2",
+        "name": "GDP",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 4,
+    "fields": {
+        "domain": 1,
+        "code": "C1.3",
+        "name": "GDP/Capita (PPP)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 5,
+    "fields": {
+        "domain": 1,
+        "code": "C1.4",
+        "name": "GINI index for income distribution (source: World Bank)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 6,
+    "fields": {
+        "domain": 1,
+        "code": "C1.5",
+        "name": "Total pharmaceutical market in USD",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 7,
+    "fields": {
+        "domain": 1,
+        "code": "C1.5.1",
+        "name": "Percentage of market share by value produced by domestic manufacturers (%)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 8,
+    "fields": {
+        "domain": 1,
+        "code": "C1.5.2",
+        "name": "Percentage of market share by value of imported pharmaceutical products (%)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 9,
+    "fields": {
+        "domain": 1,
+        "code": "C1.6",
+        "name": "Composition of Total Health Expenditure [Public, Private (Out-of-pocket as share of private)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 10,
+    "fields": {
+        "domain": 1,
+        "code": "C1.7",
+        "name": "Total Expenditure on Pharmaceuticals per Habitant (USD)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 11,
+    "fields": {
+        "domain": 1,
+        "code": "C1.8",
+        "name": "Expenditure on Pharmaceuticals as a percentage (%) of health's total expenditure.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 12,
+    "fields": {
+        "domain": 1,
+        "code": "C1.9",
+        "name": "Total Pharmaceutical Expenditure [Public, Private (Out-of-pocket as share of private)]",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 13,
+    "fields": {
+        "domain": 1,
+        "code": "C1.10",
+        "name": "Key legislation-health general (E.g. Health Act/Codex)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 14,
+    "fields": {
+        "domain": 1,
+        "code": "C1.11",
+        "name": "Key legislation-pharmaceuticals and other Health Technologies (E.g. Pharmaceutical/Drug Act/Codex)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 16,
+    "fields": {
+        "domain": 1,
+        "code": "S1.1",
+        "name": "Life-expectancy at birth",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 17,
+    "fields": {
+        "domain": 1,
+        "code": "S1.2",
+        "name": "Percentage of Adults Aged over 60 years (65 and older)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 18,
+    "fields": {
+        "domain": 1,
+        "code": "S1.3",
+        "name": "Percentage of children Aged below 15 years (under 14)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 19,
+    "fields": {
+        "domain": 1,
+        "code": "S1.4",
+        "name": "Percentage population served by the public health system:",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 20,
+    "fields": {
+        "domain": 1,
+        "code": "S1.4.1",
+        "name": "% of National public insurance",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 21,
+    "fields": {
+        "domain": 1,
+        "code": "S1.4.2",
+        "name": "% of Social-security",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 22,
+    "fields": {
+        "domain": 1,
+        "code": "S1.4.3",
+        "name": "% of Private security",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 23,
+    "fields": {
+        "domain": 1,
+        "code": "S1.4.4",
+        "name": "Other, please describe",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 24,
+    "fields": {
+        "domain": 1,
+        "code": "S1.5",
+        "name": "National health expenditure as a % of GDP:",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 25,
+    "fields": {
+        "domain": 1,
+        "code": "S1.5.1",
+        "name": "Public",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 26,
+    "fields": {
+        "domain": 1,
+        "code": "S1.5.2",
+        "name": "Private",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 27,
+    "fields": {
+        "domain": 1,
+        "code": "S1.6",
+        "name": "Total Health Expenditure/Capita (USD Year)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 28,
+    "fields": {
+        "domain": 2,
+        "code": "C2.1",
+        "name": "Number of physicians per 1,000 population",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 29,
+    "fields": {
+        "domain": 2,
+        "code": "C2.2",
+        "name": "Number of registered radiologists per 100,000 population",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 30,
+    "fields": {
+        "domain": 2,
+        "code": "C2.3",
+        "name": "Number of registered pharmacists per 10,000 population",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 31,
+    "fields": {
+        "domain": 3,
+        "code": "C3.1",
+        "name": "Is the country a member of the World Trade Organization?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 32,
+    "fields": {
+        "domain": 3,
+        "code": "C3.2",
+        "name": "With reference to the flexibilities and safeguards (TRIPS) contained in national legislation: are there flexibilities related to the Bolar Extension? Specify",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 33,
+    "fields": {
+        "domain": 3,
+        "code": "C3.4",
+        "name": "Does some kind of relationship exist between the provision of marketing authorization and patent condition of the product presented? (Patent Linkage)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 35,
+    "fields": {
+        "domain": 3,
+        "code": "C3.5",
+        "name": "Are there legal provisions in order to avoid the extension of a patent? (Evergreening)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 36,
+    "fields": {
+        "domain": 4,
+        "code": "C4.1",
+        "name": "National Medicines and other Health Technologies Policy official document (s) exists. (medicines, blood etc). If yes, please write the year of the most recent document (s).",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 37,
+    "fields": {
+        "domain": 4,
+        "code": "C4.2",
+        "name": "Does a national medicines policy implementation plan exist?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 38,
+    "fields": {
+        "domain": 4,
+        "code": "C4.3",
+        "name": "Is access to essential medicines/technologies a part of the fulfillment of the right to health, is it recognized in the constitution or is it part of national legislation? If yes to any of these three please provide details",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 39,
+    "fields": {
+        "domain": 4,
+        "code": "C4.4",
+        "name": "Official strategy or policy in place for multisource (generics) medicines",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 40,
+    "fields": {
+        "domain": 5,
+        "code": "C5.1",
+        "name": "Access to medicines on the National EML is guaranteed without any payment at the point of care, service or dispensing of the medicines.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 41,
+    "fields": {
+        "domain": 5,
+        "code": "C5.2",
+        "name": "Median availability of tracer essential medicines in the public sector. Provide percentage (%)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 42,
+    "fields": {
+        "domain": 5,
+        "code": "C5.3",
+        "name": "Consumption of tracer medicines by DDD (Daily defined dose per 1,000 inhabitants per day):",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 43,
+    "fields": {
+        "domain": 2,
+        "code": "S2.1",
+        "name": "Number of registered medical physicists per 100,000 population",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 44,
+    "fields": {
+        "domain": 2,
+        "code": "S2.2",
+        "name": "Number of registered radiation oncologists per 100,000 population",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 45,
+    "fields": {
+        "domain": 2,
+        "code": "S2.3",
+        "name": "Number of registered radiological technologists per 100,000 population",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 46,
+    "fields": {
+        "domain": 2,
+        "code": "S2.4",
+        "name": "Number of registered nurses per 10,000 population",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 47,
+    "fields": {
+        "domain": 2,
+        "code": "S2.5",
+        "name": "Number of registered pharmacy technicians per 10,000 population",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 48,
+    "fields": {
+        "domain": 3,
+        "code": "C3.3",
+        "name": "Are the legal provisions for data exclusivity for pharmaceutical products? (Data Exclusivity)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 49,
+    "fields": {
+        "domain": 3,
+        "code": "C3.6",
+        "name": "Is there a public record of patents, accessible to the public?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 50,
+    "fields": {
+        "domain": 3,
+        "code": "S3.1",
+        "name": "Key legislation-intellectual property and data protection",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 51,
+    "fields": {
+        "domain": 3,
+        "code": "S3.2",
+        "name": "Key legislation-innovation for health",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 52,
+    "fields": {
+        "domain": 3,
+        "code": "S3.3",
+        "name": "With reference to the flexibilities and safeguards (TRIPS) contained in national legislation: are there flexibilities related to the compulsory licensing provisions that can be applied for reasons of public health?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 53,
+    "fields": {
+        "domain": 3,
+        "code": "S3.4",
+        "name": "Does national legislation have provisions related with the parallel importation?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 54,
+    "fields": {
+        "domain": 3,
+        "code": "S3.5",
+        "name": "Is it part of the State of any free trade agreement / partnership / customs union of bilateral or multilateral agreement, which has a chapter on intellectual property?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 55,
+    "fields": {
+        "domain": 3,
+        "code": "S3.6",
+        "name": "Are there guidelines or procedures in the country that incorporate the public health perspective in the process of evaluating pharmaceutical patent applications? (for example, guidelines for the evaluation of patent applications, prior consent procedures",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 56,
+    "fields": {
+        "domain": 4,
+        "code": "S4.1",
+        "name": "Is the pharmaceutical policy implementation being regularly monitored/assessed?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 57,
+    "fields": {
+        "domain": 4,
+        "code": "S4.2",
+        "name": "National Health Policy (NHP) / Law exists. If yes date",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 58,
+    "fields": {
+        "domain": 4,
+        "code": "S4.3",
+        "name": "National Good Governance Policy or transparency framework for governmental institutions and officials exists. If yes, please specify the year.",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 59,
+    "fields": {
+        "domain": 4,
+        "code": "S4.4",
+        "name": "Implementation of a functional system of surveillance and control of advertising or inaccurate or unethical information about medicines and other health technologies",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 60,
+    "fields": {
+        "domain": 4,
+        "code": "S4.5",
+        "name": "Official strategy or policy for prescription by international common denomination (INN) for medicines",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 61,
+    "fields": {
+        "domain": 4,
+        "code": "S4.6",
+        "name": "Official strategy or policy that allows substitution of generics in the public sector",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 62,
+    "fields": {
+        "domain": 4,
+        "code": "S4.7",
+        "name": "Official strategy or policy that allows substitution of generics in the private sector",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 63,
+    "fields": {
+        "domain": 4,
+        "code": "S4.8",
+        "name": "Market share of multi-source medicines (branded and unbranded generic products) by volume and value in public and private sector",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 64,
+    "fields": {
+        "domain": 5,
+        "code": "C5.3.1",
+        "name": "Antibiotic (J and J01)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 65,
+    "fields": {
+        "domain": 5,
+        "code": "C5.3.2",
+        "name": "Antidiabetic (A10)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 66,
+    "fields": {
+        "domain": 5,
+        "code": "C5.3.3",
+        "name": "Antihypertensives (C02)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 67,
+    "fields": {
+        "domain": 6,
+        "code": "C6.1",
+        "name": "Legislation identifies the institutions involved in regulatory system medicines and other health technologies, their responsibilities, functions, roles and powers. Please, provide the name(s) of the NRA(s)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 68,
+    "fields": {
+        "domain": 6,
+        "code": "C6.2",
+        "name": "Has the NRA been evaluated by Regional or Global Benchmarking Tool? If yes, has it achieved level 3 of functionality?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 69,
+    "fields": {
+        "domain": 6,
+        "code": "C6.3",
+        "name": "What category of medicinal products does the NRA regulate? Specify",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 70,
+    "fields": {
+        "domain": 6,
+        "code": "C6.3.1",
+        "name": "Pharmaceuticals of chemical synthesis",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 71,
+    "fields": {
+        "domain": 6,
+        "code": "C6.3.2",
+        "name": "Medical devices",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 72,
+    "fields": {
+        "domain": 6,
+        "code": "C6.3.3",
+        "name": "Other, Specify",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 73,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4",
+        "name": "What functions does the NRA perform?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 74,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.1",
+        "name": "Registration and Marketing Authorization",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 75,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.2",
+        "name": "Licensing of premises",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 76,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.3",
+        "name": "Market Surveillance and Control",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 77,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.4",
+        "name": "Vigilance",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 78,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.5",
+        "name": "Clinical Trials Oversight",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 79,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.6",
+        "name": "Regulatory Inspection",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 80,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.7",
+        "name": "Laboratory Testing",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 81,
+    "fields": {
+        "domain": 6,
+        "code": "C6.4.8",
+        "name": "NRA Vaccine Lot Release",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 82,
+    "fields": {
+        "domain": 6,
+        "code": "C6.5",
+        "name": "Number of employees of the National Regulatory Authrity (NRA) with activities at central level",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 83,
+    "fields": {
+        "domain": 6,
+        "code": "C6.6",
+        "name": "Number of medicines with current valid registration",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 84,
+    "fields": {
+        "domain": 6,
+        "code": "C6.7",
+        "name": "NRA webpage or website",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 85,
+    "fields": {
+        "domain": 6,
+        "code": "S6.1",
+        "name": "Number of licensed national pharmaceutical manufactures",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 86,
+    "fields": {
+        "domain": 6,
+        "code": "S6.2",
+        "name": "Number of import permits of medicines granted in the last year",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 87,
+    "fields": {
+        "domain": 6,
+        "code": "S6.3",
+        "name": "Are there legal provisions that categorize according to the risk to medical devices?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 88,
+    "fields": {
+        "domain": 7,
+        "code": "C7.1",
+        "name": "Agency/agencies responsible for public procurement for medicines and medical devices. Please specify",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 89,
+    "fields": {
+        "domain": 7,
+        "code": "C7.2",
+        "name": "Is there a program, system or area responsible for the Quality Assurance for the public procurement mechanism for medicines?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 90,
+    "fields": {
+        "domain": 7,
+        "code": "C7.3",
+        "name": "Number of licensed retail pharmacies per 10,000 population (Private sector).",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 91,
+    "fields": {
+        "domain": 7,
+        "code": "S7.1",
+        "name": "Number of entities legally authorized to import pharmaceutical products.",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 92,
+    "fields": {
+        "domain": 7,
+        "code": "S7.2",
+        "name": "Number of distributors or their agents authorized to operate",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 93,
+    "fields": {
+        "domain": 7,
+        "code": "S7.3",
+        "name": "Number of wholesalers licensed",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 94,
+    "fields": {
+        "domain": 7,
+        "code": "S7.4",
+        "name": "Is there regulation for sale of pharmaceutical products via the Internet that limited to registered and authorized mail-order pharmacies or other authorized entities?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 95,
+    "fields": {
+        "domain": 8,
+        "code": "C8.1",
+        "name": "Are ther legal provisions that require the presence of the pharmacist in all public and private pharmacies/drug stores?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 96,
+    "fields": {
+        "domain": 8,
+        "code": "C8.1.1",
+        "name": "Full time (Pharmacy working hours)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 97,
+    "fields": {
+        "domain": 8,
+        "code": "C8.1.2",
+        "name": "Part time",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 98,
+    "fields": {
+        "domain": 8,
+        "code": "S8.1",
+        "name": "Number of hospital pharmacies",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 99,
+    "fields": {
+        "domain": 8,
+        "code": "S8.2",
+        "name": "Number of private pharmacies",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 100,
+    "fields": {
+        "domain": 8,
+        "code": "S8.3",
+        "name": "Are there any follow-up program of NCD for patients at pharmaceutical care/pharmacies for at least two diseases (e.g. HIV, diabetes, hypertension)?",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 101,
+    "fields": {
+        "domain": 9,
+        "code": "C9.1",
+        "name": "Do legal provisions exist that establish the functions and responsibilities of the National Regulatory Authority for radiological safety to protect patients, workers, public, and the environment.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 102,
+    "fields": {
+        "domain": 9,
+        "code": "C9.2",
+        "name": "Annual number of radiological explorations per 1,000 population",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 103,
+    "fields": {
+        "domain": 9,
+        "code": "S9.1",
+        "name": "Radiological Health technologies per 1 million population (public and private sector)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 104,
+    "fields": {
+        "domain": 9,
+        "code": "S9.1.1",
+        "name": "Linear accelerator",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 105,
+    "fields": {
+        "domain": 9,
+        "code": "S9.1.2",
+        "name": "Telecobalt unit (Cobalt-60)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 106,
+    "fields": {
+        "domain": 10,
+        "code": "C10.1",
+        "name": "Is there a specific law that regulates the promotion of donation, processing, storage, use of blood and health surveillance?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 107,
+    "fields": {
+        "domain": 10,
+        "code": "C10.2",
+        "name": "Are the Hemovigilance (HM) activities legally established (roles and responsibilities) for the HM?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 108,
+    "fields": {
+        "domain": 10,
+        "code": "C10.3",
+        "name": "Total Number of whole blood donations collected during the reporting period (by total blood banks, types of donation and frequency).",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 109,
+    "fields": {
+        "domain": 10,
+        "code": "C10.4",
+        "name": "Percentage of donations (whole blood and apheresis) that were screened for TTIs",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 110,
+    "fields": {
+        "domain": 10,
+        "code": "C10.5",
+        "name": "Percentage of RBC units separated and discarded from the total whole blood units",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 111,
+    "fields": {
+        "domain": 11,
+        "code": "C11.1",
+        "name": "Does the country have a national organization of transplants with structure, competencies and financing according to the essential responsibilities of the donation and transplant system",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 112,
+    "fields": {
+        "domain": 11,
+        "code": "C11.2",
+        "name": "Does the country have a National single registry for the entire health system (public and private), of waiting patients (waiting list), coordinated by the governing body.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 113,
+    "fields": {
+        "domain": 11,
+        "code": "C11.3",
+        "name": "Does the country have documents that establish technical-scientific criteria for the donation, processing and allocation and distribution of organs, tissues and cells.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 114,
+    "fields": {
+        "domain": 11,
+        "code": "C11.4",
+        "name": "Does the country have mechanisms that guarantee the availability of medicines for donation and transplant programs",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 115,
+    "fields": {
+        "domain": 12,
+        "code": "C12.1",
+        "name": "Does a National Essential Medicines List (EML) exist? If yes, provide the number of medicines on the EML by active ingredient",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 116,
+    "fields": {
+        "domain": 12,
+        "code": "C12.2",
+        "name": "A national Committee on Selection (free of conflict of interests) and Use of Essential Medicines exists.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 117,
+    "fields": {
+        "domain": 12,
+        "code": "C12.3",
+        "name": "Is there a procedure for the selection of medicines of the EML publically available?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 118,
+    "fields": {
+        "domain": 12,
+        "code": "C12.4",
+        "name": "Was the EML updated in the last 5 years?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 119,
+    "fields": {
+        "domain": 12,
+        "code": "C12.5",
+        "name": "Does a National Essential Priority Medical Devices List exist? If yes, provide the number of medical devices listed",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 120,
+    "fields": {
+        "domain": 12,
+        "code": "C12.6",
+        "name": "Existence of a national strategy or plan for the rational use of medicines and other health technologies, with monitoring of results",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 121,
+    "fields": {
+        "domain": 12,
+        "code": "C12.7",
+        "name": "Incorporation of medicines and other health technologies of the public sector through an official mechanism that includes the selection according to the criteria of Health Technologies Assessment",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 122,
+    "fields": {
+        "domain": 12,
+        "code": "C12.8",
+        "name": "Is there a functional system of surveillance and control of advertising or inaccurate or unethical information about medicines and other health technologies?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 123,
+    "fields": {
+        "domain": 12,
+        "code": "C12.9",
+        "name": "Adoption of guidelines and indicators for, at least, good prescribing practices and good pharmacy practices",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 124,
+    "fields": {
+        "domain": 12,
+        "code": "S12.1",
+        "name": "Existence of a current national and functional program of communication and dissemination of independent information on the rational use of medicines and other health technologies",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 125,
+    "fields": {
+        "domain": 12,
+        "code": "S12.2",
+        "name": "Existence of official systems for monitoring the safety of medicines and other health technologies (national functional systems of at least two of the following: pharmacovigilance, technovigilance, haemovigilance)",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 126,
+    "fields": {
+        "domain": 12,
+        "code": "S12.3",
+        "name": "Existence of defined standards and procedures for the development or adaptation of clinical practice guidelines",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 127,
+    "fields": {
+        "domain": 12,
+        "code": "S12.4",
+        "name": "There are Clinical Guidelines in agreement with EML for most common illnesses",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 128,
+    "fields": {
+        "domain": 13,
+        "code": "C13.1",
+        "name": "Are taxes imposed on pharmaceuticals?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 129,
+    "fields": {
+        "domain": 13,
+        "code": "C13.2",
+        "name": "Importation tax. If yes, what percentage?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 130,
+    "fields": {
+        "domain": 13,
+        "code": "C13.3",
+        "name": "VAT (value-added tax) If yes, what percentage?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 131,
+    "fields": {
+        "domain": 13,
+        "code": "C13.4",
+        "name": "Other. Please, describe",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 132,
+    "fields": {
+        "domain": 13,
+        "code": "C13.5",
+        "name": "Is there an institution responsible for HTA?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 133,
+    "fields": {
+        "domain": 13,
+        "code": "C13.6",
+        "name": "Does the country have a legal framework for the use of HTA in decision-making? Specify",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 134,
+    "fields": {
+        "domain": 13,
+        "code": "C13.7",
+        "name": "Public procurement of medicines is determined by the products selected according to HTA or other evidence-based criteria",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 135,
+    "fields": {
+        "domain": 13,
+        "code": "C13.8",
+        "name": "Agency/agencies that sets medicine prices exists. If yes, name.",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 136,
+    "fields": {
+        "domain": 13,
+        "code": "C13.9",
+        "name": "Does pricing regulation in the public sector exist?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 137,
+    "fields": {
+        "domain": 13,
+        "code": "C13.10",
+        "name": "Does pricing regulation in the private sector exist?",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 138,
+    "fields": {
+        "domain": 13,
+        "code": "C13.11",
+        "name": "Name of the body responsible for selection of products for coverage",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 139,
+    "fields": {
+        "domain": 13,
+        "code": "C13.13",
+        "name": "Percentage individuals with raised blood pressure (SBP>= 140 and/or DBP >= 90 mmHG) currently taking medicines for hypertension",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 140,
+    "fields": {
+        "domain": 13,
+        "code": "C13.14",
+        "name": "Percentage individuals with raised fasting blood glucose (plasma venous value ≥126 mg/dl) currently on medication for raised blood glucose)",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 141,
+    "fields": {
+        "domain": 13,
+        "code": "C13.15",
+        "name": "Opioid consumption in morphine milligrams (mg) per capita/year",
+        "type": 1,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 142,
+    "fields": {
+        "domain": 13,
+        "code": "S13.1",
+        "name": "Percentage patients diagnosed with HIV on treatment",
+        "type": 2,
+        "internal_notes": ""
+    }
+},
+{
+    "model": "main.indicator",
+    "pk": 143,
+    "fields": {
+        "domain": 13,
+        "code": "S13.2",
+        "name": "Percentage patients diagnosed with TB concluding treatment course",
+        "type": 2,
+        "internal_notes": ""
+    }
+}
+]
