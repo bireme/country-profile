@@ -1,0 +1,119 @@
+[
+{
+    "model": "main.domain",
+    "pk": 1,
+    "fields": {
+        "number": 1,
+        "name": "Demographics, economics, market and expenditure",
+        "description": "Assessing healthand pharmaceutical systems require background information on the size of the population, its demographics andeconomics, the pharmaceutical market size and the expenditure on health and pharmaceuticals. These key data are parameters that define the requirements that a system has to meet in terms of population coverage and availability of resources. \r\n\r\nThe percentage of pharmaceutical expenditure out of total health expenditure provides a useful indication on the relative investment in pharmaceuticals compared to other components. The variation on per capita spending on pharmaceuticals between countries isdue to differences in the share of generic medicines, prices and consumption pattern among other factors.Benchmarking pharmaceutical expenditure per capitacan help identifying inefficiencies in spending. Very low pharmaceutical expenditure per capita can indicate a gap in pharmaceutical service delivery and result in higher morbidity and mortality."
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 2,
+    "fields": {
+        "number": 2,
+        "name": "Human Resources for health",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 3,
+    "fields": {
+        "number": 3,
+        "name": "Innovation and Intellectual Property Management",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 4,
+    "fields": {
+        "number": 4,
+        "name": "Pharmaceutical Policy",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 5,
+    "fields": {
+        "number": 5,
+        "name": "Access of medicines",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 6,
+    "fields": {
+        "number": 6,
+        "name": "Regulatory Capacity",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 7,
+    "fields": {
+        "number": 7,
+        "name": "Procurement and Supply Chain Management",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 8,
+    "fields": {
+        "number": 8,
+        "name": "Pharmaceutical services",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 9,
+    "fields": {
+        "number": 9,
+        "name": "Radiological regulation and Services",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 10,
+    "fields": {
+        "number": 10,
+        "name": "Blood regulation and services",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 11,
+    "fields": {
+        "number": 11,
+        "name": "Transplants",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 12,
+    "fields": {
+        "number": 12,
+        "name": "Rational Use of Medicines and other Health Technologies",
+        "description": ""
+    }
+},
+{
+    "model": "main.domain",
+    "pk": 13,
+    "fields": {
+        "number": 13,
+        "name": "Pricing, Procurement, Health Technology Assessment (HTA) and coverage",
+        "description": ""
+    }
+}
+]
