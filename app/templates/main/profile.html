@@ -21,13 +21,13 @@
                     <div class="accordion" id="descripion_{{domain.id}}">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading_{{domain.id}}">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{domain.id}}" aria-expanded="true" aria-controls="collapse_{{domain.id}}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_{{domain.id}}" aria-expanded="true" aria-controls="collapse_{{domain.id}}">
                                     <h2 id="d{{domain.id}}"><b>Domain {{ domain.number }}:</b> <small>{{ domain.name }}</small></h2>
                                 </button>
                             </h2>
                             <div id="collapse_{{domain.id}}" class="accordion-collapse collapse" aria-labelledby="heading_{{domain.id}}" data-bs-parent="#descripion_{{domain.id}}">
                                 <div class="accordion-body">
-                                    {{ domain.description }}
+                                    {{ domain.description|linebreaks }}
                                 </div>
                             </div>
                         </div>
