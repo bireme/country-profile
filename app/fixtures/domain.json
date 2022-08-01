@@ -5,7 +5,7 @@
     "fields": {
         "number": 1,
         "name": "Demographics, economics, market and expenditure",
-        "description": "Assessing healthand pharmaceutical systems require background information on the size of the population, its demographics andeconomics, the pharmaceutical market size and the expenditure on health and pharmaceuticals. These key data are parameters that define the requirements that a system has to meet in terms of population coverage and availability of resources. \r\n\r\nThe percentage of pharmaceutical expenditure out of total health expenditure provides a useful indication on the relative investment in pharmaceuticals compared to other components. The variation on per capita spending on pharmaceuticals between countries isdue to differences in the share of generic medicines, prices and consumption pattern among other factors.Benchmarking pharmaceutical expenditure per capitacan help identifying inefficiencies in spending. Very low pharmaceutical expenditure per capita can indicate a gap in pharmaceutical service delivery and result in higher morbidity and mortality."
+        "description": "Assessing health and pharmaceutical systems require background information on the size of the population, its demographics and economics, the pharmaceutical market size and the expenditure on health and pharmaceuticals. These key data are parameters that define the requirements that a system has to meet in terms of population coverage and availability of resources. \r\nThe percentage of pharmaceutical expenditure out of total health expenditure provides a useful indication on the relative investment in pharmaceuticals compared to other components. The variation on per capita spending on pharmaceuticals between countries is due to differences in the share of generic medicines, prices and consumption pattern among other factors. Benchmarking pharmaceutical expenditure per capita can help identifying inefficiencies in spending. Very low pharmaceutical expenditure per capita can indicate a gap in pharmaceutical service delivery and result in higher morbidity and mortality."
     }
 },
 {
@@ -14,7 +14,7 @@
     "fields": {
         "number": 2,
         "name": "Human Resources for health",
-        "description": ""
+        "description": "Human resources are one of the six building blocks of the health system. Pharmacy workforce comprises professionals charged with the final custody of medicines, before they are dispensed to patients, as well as ensuring the proper use and administration of medicines. They also be active in the regulation, manufacturing and procurement of medicines.\r\nCurrently, there is no recommendation of the number of pharmacists or pharmacy technicians per capita. However, very low numbers of trained human resources per capita in the pharmaceutical sector can indicate gaps in the delivery capacity of the system."
     }
 },
 {
@@ -23,7 +23,7 @@
     "fields": {
         "number": 3,
         "name": "Innovation and Intellectual Property Management",
-        "description": ""
+        "description": "Balancing incentives for innovation and manufacturing medicines with affordability of medicines has been a challenge globally. The flexibilities of the World Trade Organization (WTO)’s Agreement on Trade-related Aspects of Intellectual Property Rights (TRIPS) allow countries protecting public health, including access to medicines. The existing of provisions for the flexibilities in national legislative framework provide relevant information on the country’s ability to enact public health protection."
     }
 },
 {
@@ -32,7 +32,7 @@
     "fields": {
         "number": 4,
         "name": "Pharmaceutical Policy",
-        "description": ""
+        "description": "Laws and policies are the basis for good governance in the pharmaceutical sector. A national pharmaceutical policy is the explicit commitment of the government towards different policy objectives related to pharmaceuticals. It provides a guidance for action for all actors involved in the pharmaceutical sector. An implementation plan for the policy defines the responsibilities, measurable goals and timeframes of each actor and those overseeing the implementation. The implementation plan should also include the plan for reporting and independent assessment of the implementation progress. \r\nThe use of generic medicines and biosimilars is an important opportunity to increase the efficiency of the pharmaceutical sector spending. Policies to promote the use of generics are a corner stone to guide the government and other institutions to implement generic medicines strategies."
     }
 },
 {
@@ -41,7 +41,7 @@
     "fields": {
         "number": 5,
         "name": "Access of medicines",
-        "description": ""
+        "description": "Access to medicines in one of the intermediate performance goals of a functioning pharmaceutical system. Benchmarking the consumption of medicines across countries with similar epidemiological profiles is useful to indicate possible over- or underutilization of medicines. It is also useful to potentially indicate the increased risk of the development of antimicrobial resistance in the case of antibiotics.\r\nAccess to essential medicines should not depend on the financial means of individuals or households and should be guaranteed as a basic right."
     }
 },
 {
@@ -50,7 +50,7 @@
     "fields": {
         "number": 6,
         "name": "Regulatory Capacity",
-        "description": ""
+        "description": "Regulation is focused on ensuring efficacy, quality and safety of medicines through their life-cycle. Collaboration between countries can increase efficiency and promote human resource capacity building. Countries in the Americas have invested in strengthening regulatory authorities but more work needs to be done. \r\nThe Global Benchmarking Tool has been developed to objectively and systematically evaluate regulatory systems across the globe. Indicators in this section are taken from the Global Benchmarking Tool to align with best practice in the field of evaluation of regulatory systems."
     }
 },
 {
@@ -59,7 +59,7 @@
     "fields": {
         "number": 7,
         "name": "Procurement and Supply Chain Management",
-        "description": ""
+        "description": "The goal of an efficient procurement is to ensure the acquisition of the adequate quantities of a quality assured medicines at an affordable price. Achieving this goal can improve access to medicines. Country collaborations in different steps in the procurement process can promote efficiency including negotiation, information exchange and bulk procurement. \r\nDistribution systems have the goal to ensure a steady supply of pharmaceuticals and other health goods. Distribution of goods is an additional costs to the end price patients or the system have to pay. Hence, it is important to design systems that protect the goods from damage and losses, delivery the right quantities at the right time at the lowest cost possible. Assessing procurmenet and supply chain performance is needed on an ongoing basis. The indicators in this section are well established and are routinely used to assess global supply chains."
     }
 },
 {
@@ -68,7 +68,7 @@
     "fields": {
         "number": 8,
         "name": "Pharmaceutical services",
-        "description": ""
+        "description": "Services that the provided by pharmacists or trained pharmacy staff include among other tasks dispensing, health promotion, screening for diseases, administrating medicines and ensuring safe storage and quality supply of medicines. \r\nA system that delivers pharmaceutical services requires adequately trained staff as well as the legal framework at establishes standards for the delivery of medicines. For instance, dispensing of medicines can only be done under the supervision of a trained health professional. Retail stores with medicines dispensing units require an onsite pharmacist to be present throughout the hours of its operation. \r\nThe number of private and public pharmacies including hospital pharmacies per inhabitants is an indicators to assess the capacity of a system to provide pharmaceutical services. Information of type of services provided by pharmacies indicates the locations where population can access healthcare."
     }
 },
 {
@@ -77,7 +77,7 @@
     "fields": {
         "number": 9,
         "name": "Radiological regulation and Services",
-        "description": ""
+        "description": "Conventional diagnostic radiology (basic and specialized), interventional radiology, sonography, radiation therapy, and diagnostic and therapeutic nuclear medicine are currently playing an essential function in clinical health care processes. These services cover a wide range of clinical applications, from the diagnosis and monitoring of very common diseases and situations with a high incidence, such as respiratory diseases, traumas, digestive disorders, control of pregnancy and breast disorders, etc., to more complex diseases such as tumors, AIDS, central nervous\r\nsystem conditions, or cardiovascular diseases. International standards also require that countries have a national regulatory infrastructure for radiation safety and protection of patients, health workers and the public in general."
     }
 },
 {
@@ -86,7 +86,7 @@
     "fields": {
         "number": 10,
         "name": "Blood regulation and services",
-        "description": ""
+        "description": "Universal access to safe blood for transfusions is based on self-sufficiency in blood and blood products through voluntary unpaid donation of blood, improvements in the quality of donated blood, maximization of adequate use of blood, strengthening of human resources.\r\nIn addition to the technical aspects, it is necessary for states to ensure the allocation of resources according to national blood safety objectives and plans, reorganize and integrate blood services networks in accordance with the needs of the national health system. That they develop and manage health surveillance, and promote and manage Hemovigilance and risk management, along the chain of transfusion.\r\nFinally, obtaining relevant information through specific indicators allows strengthening the management of information to visualize and determine if there is a sufficient, timely, accessible and safe blood supply, and how this supply is linked to the country's morbidity and mortality."
     }
 },
 {
@@ -95,7 +95,7 @@
     "fields": {
         "number": 11,
         "name": "Transplants",
-        "description": ""
+        "description": "The transplant of organs, tissues and cells has become a worldwide practice that can prolong life and improve its quality. Advances in ablation, preservation, transplant and immunosuppression techniques have improved the effectiveness, cost-effectiveness and cultural acceptability of transplants with the consequent increase in demand for these practices. Today it is possible to perform solid organ transplants such as kidney, liver, heart, lung, pancreas, small intestine and cornea mainly, and also treat other events leukemias, severe burns, traumatic accidents and surgical treatment, with the use of cell and tissue transplantation , these treatments have become an effective therapy that saves lives and improves the quality of life of many people. However, despite the great scientific developments and the advances that can be seen in some countries, the capacities for transplants in the different health systems of the Region of the Americas are heterogeneous.\r\nTherefore, having basic information about these transplant therapies allows us to propose a baseline that allows the monitoring of the strategy and plan of action on donation and equitable access to the transplantation of organs, tissues and cells 2019 - 2030 recently. promoted by PAHO, also to know and follow the behavior of equitable and quality access to transplants of organs, tissues and cells in the countries."
     }
 },
 {
@@ -104,7 +104,7 @@
     "fields": {
         "number": 12,
         "name": "Rational Use of Medicines and other Health Technologies",
-        "description": ""
+        "description": "Appropriate use of medicines is necessary to achieve health benefits and protect populations from harm cause by medicines. Additionally, inappropriate use of medicines wastes resources. Inappropriate use of medicines include: overuse (using medicines that are unnecessary), underuse (the absence of medicines when they are effective), the wrong use (medicines are not in line with best clinical evidence or wasting resources).  \r\nManagement tools to promote appropriate use of medicines are formularies or essential medicines lists, standard treatment guidelines and health technology assessments, among others. The development of these tools needs to follow a defined process that is publically available and that manages conflicts for interest if present. \r\nAdvertisement of medicines can provide distorted information about medicines that can result in harmful use of medicines. Surveillance of advertisement by regulatory bodies is relevant to prevent harm."
     }
 },
 {
@@ -113,7 +113,7 @@
     "fields": {
         "number": 13,
         "name": "Pricing, Procurement, Health Technology Assessment (HTA) and coverage",
-        "description": ""
+        "description": "Many medicines are considered essential goods which means that their prices are less influenced by demand. Measuring medicines prices can be challenging but is important to understand affordability which is a key dimension of access. Governments can influence markets that set prices through control of markups or eliminating tariffs and taxes. Governments are often buyers of large quantities of medicines which means that they can effectively negotiate prices and share information with other national or international buyers to increase their power. \r\nHealth technology assessments (HTAs) play an important part in the selection of medicines for reimbursement. An HTA consists of a systematic evaluation of the properties, effects, and/or impacts of medicines, devices and other technologies for health. Many countries in the Americas have developed institutional capacity to carry out HTAs to support the selection of technologies for their health systems. However, much needs to be done to improve quality and efficiencies in technology selection for health systems. Country collaborations in this area are vital to reduce costs of conducting HTA. \r\nTreatment coverage is one of the most relevant outcome measures to assess a functioning pharmaceutical system. It is a core indicator of many vertical disease programs such as HIV and TB. Since non-communicable diseases are the top cause of mortality worldwide assessing treatment coverage for common diseases such as hypertension and diabetes is critical in addition to HIV and TB."
     }
 }
 ]

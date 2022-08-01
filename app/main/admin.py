@@ -20,6 +20,7 @@ class DomainAdmin(admin.ModelAdmin):
     model = Domain
     inlines = [DomainLocalAdmin,]
     search_fields = ['name']
+    ordering = ['number']
 
 
 class ProfileLocalAdmin(admin.TabularInline):
