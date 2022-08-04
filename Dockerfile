@@ -1,5 +1,5 @@
 ########### BASE STAGE ###########
-FROM python:3.10.4-alpine AS base
+FROM python:3.10.6-alpine AS base
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -13,8 +13,7 @@ RUN apk add --no-cache --virtual .build-deps \
     gcc \
     python3-dev \
     musl-dev \
-    postgresql-dev \
-    mariadb-dev \
+    && apk add --no-cache mariadb-dev \
     && pip install --upgrade pip setuptools && pip install --no-cache-dir -r /app/requirements.txt \
     && apk del .build-deps
 
