@@ -1,19 +1,6 @@
 version: '3.4'
 
 services:
-  country_profile_db:
-    container_name: country-profile-db
-    restart: unless-stopped
-    image: postgres:14.3-alpine
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_DB=${DATABASE_NAME}
-      - POSTGRES_USER=${DATABASE_USER}
-      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
-    networks:
-      - nginx-proxy
-
   country_profile_app:
     container_name: country-profile-app
     restart: unless-stopped
@@ -27,8 +14,6 @@ services:
       - ${LOG_PATH}:/logs
       - static_files:/app/static_files
       - gunisock:/tmp
-    depends_on:
-      - country_profile_db
     env_file:
       - ./conf/app-env
     command: gunicorn --bind unix:/tmp/gunicorn.sock country_profile.wsgi ${GUNICORN_PARAMS}
