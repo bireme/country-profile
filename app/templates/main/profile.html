@@ -45,7 +45,6 @@
                         <tbody>
                             {% for indicator in indicator_list %}
                                 {% if indicator.domain == domain %}
-
                                     {% if indicator.type == 2 and indicator.code|slice:"2:" == '.1' %}
                                         <tr class="table-warning">
                                             <td>SI</td>
@@ -59,35 +58,37 @@
                                     <tr>
                                         <td>{{ indicator.code }}</td>
                                         <td>{{ indicator.name }}</td>
-                                        <td>{{ country_indicators|get_paho_data:indicator.code }}</td>
-                                        <td>{{ country_indicators|get_public_data:indicator.code }}</td>
+                                        {% if country_indicators_ids|has_data:indicator.code %}
+
+                                            {{ country_indicators_data|display_data:indicator.code|safe }}
+
+                                            <td>
+                                                <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}')">edit</a>
+                                            </td>
+                                        {% else %}
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <a href="#add" target="_blank">edit</a>
+                                            </td>
+                                        {% endif %}
                                     </tr>
                                 {% endif %}
                             {% endfor %}
                         </tbody>
                     </table>
 
-                    <!-- references
                     <hr class="border-primary border-3 opacity-25">
                     <div>
                         <small>
                             <b>References </b>
-                            <ul>
-                                <li>Population, total | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/SP.POP.TOTL?locations=GY&view=chart </li>
-                                <li>GDP (current international $) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.CD </li>
-                                <li>GDP, PPP per capita (current international $) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD  </li>
-                                <li>GHO | By category | Domestic general government health expenditure (GGHE-D) as percentage of current health expenditure (CHE) (%) - Data by country. WHO [Internet]. [cited 2018 Nov 4]; Available from: http://apps.who.int/gho/data/node.main.GHEDGGHEDCHESHA2011?lang=en </li>
-                                <li>10665/68735/WHO_EDM_PAR_2004.5.pdf?sequence=1&ua=1  </li>
-                                <li>The World Medicines Situation [Internet]. 2004 [cited 2018 Oct 31]. Available from: http://apps.who.int/iris/bitstream/handle/</li>
-                                <li>The World Medicines Situation [Internet]. 2004 [cited 2018 Oct 31]. Available from: http://apps.who.int/iris/bitstream/handle/10665/68735/WHO_EDM_PAR_2004.5.pdf?sequence=1&ua=1 </li>
-                                <li>Life expectancy at birth, total (years) | Data [Internet]. [cited 2018 Oct 31]. Available from: https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=GY</li>
-                                <li>HEALTH SITUATION [Internet]. 2018 [cited 2018 Oct 31]. Available from: http://apps.who.int/gho/data/node.cco</li>
-                                <li>WHO | Guyana. WHO [Internet]. 2018 [cited 2018 Oct 31]; Available from: http://www.who.int/countries/guy/en/  </li>
+                            <ul style="list-style-type:none">
+                                {{ country_indicators_data|display_reference_list:domain|safe }}
                             </ul>
                         </small>
                     </div>
                     <hr class="border-primary border-3 opacity-25">
-                    -->
+
                 {% endfor %}
             </div>
             <div class="col-md-4 col-lg-3 order-md-1 flag-title">
@@ -124,6 +125,8 @@
 
 
 {% block "extrajs" %}
+<script src="{% static 'js/update.js' %}"></script>
+
 <script>
     jQuery( ".nav-item" ).click(function() {
         jQuery(".nav-link").removeClass('active');
