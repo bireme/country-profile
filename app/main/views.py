@@ -87,6 +87,10 @@ class CountryIndicatorUpdate():
         else:
             context['data_formset'] = DataFormSet(instance=self.object)
 
+        if 'indicator_id' in self.kwargs:
+            context['indicator'] = Indicator.objects.get(pk=self.kwargs['indicator_id'])
+
+
         return context
 
     def form_valid(self, form):
@@ -94,10 +98,18 @@ class CountryIndicatorUpdate():
         data_formset = context['data_formset']
 
         if data_formset.is_valid():
-            self.object = form.save()
+            # if is a new indicator populate profile and indicator fields (passed in request parameters)
+            if not self.object:
+                self.object = form.save(commit=False)
+                self.object.profile_id = self.kwargs['profile_id']
+                self.object.indicator_id = self.kwargs['indicator_id']
+                self.object.save()
+            else:
+                self.object = form.save()
 
             data_formset.instance = self.object
             data_formset.save()
+            return render(self.request, 'main/close_form.html', self.get_context_data())
 
         return self.render_to_response(self.get_context_data(form=form))
 

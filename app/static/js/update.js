@@ -20,12 +20,15 @@ function open_popup_win(url, target, width, height) {
 }
 
 function open_update_data(country_indicator_id, mode){
-    update_url = '/' + mode + '/';
-    if (mode == 'update'){
-        update_url += country_indicator_id + '/';
-    }
+    update_url = '/update/' + country_indicator_id + '/';
 
+    open_popup_win(update_url, 'update_create_window', 800, 550);
+    return false;
+}
 
-    open_popup_win(update_url, 'update_create', 800, 550);
+function open_create_data(profile_id, indicator_id){
+    create_url = '/create/' + profile_id + '/' + indicator_id;
+
+    open_popup_win(create_url, 'update_create_window', 800, 550);
     return false;
 }
