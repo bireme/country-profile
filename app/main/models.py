@@ -17,6 +17,11 @@ DATA_TYPE_CHOICES = (
 )
 
 
+BOOLEAN_CHOICES = (
+    (True, _('Yes')),
+    (False, _('No'))
+)
+
 PERCENTAGE_VALIDATOR = [MinValueValidator(0), MaxValueValidator(100)]
 
 class Country(models.Model):
@@ -155,13 +160,24 @@ class CountryIndicatorData(models.Model):
     type = models.SmallIntegerField(_('Type'), choices=DATA_TYPE_CHOICES, null=True, blank=False, default=1)
     year = models.SmallIntegerField(_('Year'))
     info_text = models.CharField(_('Info (text)'), max_length=155, blank=True)
+
     info_numeric = models.IntegerField(_('Info (numeric)'), blank=True, null=True)
     info_percent = models.DecimalField(_('Info (percentage)'), max_digits=5, decimal_places=2, default=0, validators=PERCENTAGE_VALIDATOR, blank=True, null=True)
+    info_yesno = models.BooleanField(_('Info (Yes/No)'), choices=BOOLEAN_CHOICES, null=True, blank=True)
+
     reference_number = models.SmallIntegerField(_('Reference #'), null=True, blank=True)
     reference = models.TextField(_('Reference'), blank=True)
 
     def __str__(self):
-        data = self.info_text if self.info_text else '{:,}'.format(self.info_numeric) if self.info_numeric else "{}%".format(self.info_percent) if self.info_percent else ""
+        data = ''
+        if self.info_text:
+            data = self.info_text
+        elif self.info_numeric:
+            data = '{:,}'.format(self.info_numeric)
+        elif self.info_percent:
+            data = "{}%".format(self.info_percent)
+        elif self.info_yesno != None:
+            data = _('Yes') if self.info_yesno else _('No')
 
         data_year = "{} ({})".format(data, self.year)
 
