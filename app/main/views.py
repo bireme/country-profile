@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
-from django.views.generic import UpdateView
+from django.views.generic.edit import UpdateView, CreateView
 
 from main.models import *
 from main.forms import *
@@ -71,8 +71,7 @@ def update_indicator(request, profile_id, indicator_id):
     return render(request, 'main/index.html', response_data)
 
 
-@method_decorator(login_required, name='dispatch')
-class CountryIndicatorUpdate(UpdateView):
+class CountryIndicatorUpdate():
     """
     Handle creation and update of educational resource
     """
@@ -101,3 +100,18 @@ class CountryIndicatorUpdate(UpdateView):
             data_formset.save()
 
         return self.render_to_response(self.get_context_data(form=form))
+
+
+@method_decorator(login_required, name='dispatch')
+class CountryIndicatorUpdateView(CountryIndicatorUpdate, UpdateView):
+    """
+    Used as class view to create Indicator
+    Extend CountryIndicatorUpdate that do all the work
+    """
+
+@method_decorator(login_required, name='dispatch')
+class CountryIndicatorCreateView(CountryIndicatorUpdate, CreateView):
+    """
+    Used as class view to create Indicator
+    Extend CountryIndicatorUpdate that do all the work
+    """

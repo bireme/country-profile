@@ -7,7 +7,7 @@
 {% block "title" %}{{country.name}} Profile | {% endblock %}
 
 {% block "content" %}
-<main id="main_container" class="padding1">
+<main id="main_container" class="padding2">
     <div class="container">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
@@ -59,17 +59,15 @@
                                         <td>{{ indicator.code }}</td>
                                         <td>{{ indicator.name }}</td>
                                         {% if country_indicators_ids|has_data:indicator.code %}
-
                                             {{ country_indicators_data|display_data:indicator.code|safe }}
-
                                             <td>
-                                                <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}')">edit</a>
+                                                <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}', 'update'); return false">edit</a>
                                             </td>
                                         {% else %}
                                             <td></td>
                                             <td></td>
                                             <td>
-                                                <a href="#add" target="_blank">edit</a>
+                                                <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}', 'create'); return false">edit</a>
                                             </td>
                                         {% endif %}
                                     </tr>

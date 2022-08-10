@@ -1,6 +1,10 @@
 .padding1{
 	padding: 50px;
 }
+.padding2{
+	padding: 20px;
+}
+
 #header{
 	background:#2e789e ;
 	color: #fff;
@@ -83,4 +87,25 @@
 	padding: 5px 0;
 	margin-top: 10px;
 	display: block;
+}
+
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e;
+}
+
+.btn-delete{
+	margin: 10px 0 0 400px;
+	width: 20%;
+	border: solid 1px;
+	text-decoration: none;
+    border-color: #f5c6cb;
 }
