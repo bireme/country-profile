@@ -60,15 +60,19 @@
                                         <td>{{ indicator.name }}</td>
                                         {% if country_indicators_ids|has_data:indicator.code %}
                                             {{ country_indicators_data|display_data:indicator.code|safe }}
+                                            {% if user.is_authenticated %}
                                             <td>
                                                 <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}', 'update'); return false">edit</a>
                                             </td>
+                                            {% endif %}
                                         {% else %}
                                             <td></td>
                                             <td></td>
+                                            {% if user.is_authenticated %}
                                             <td>
                                                 <a href="#" onclick="javascript:open_create_data('{{country_profile.id}}', '{{indicator.id}}'); return false">edit</a>
                                             </td>
+                                            {% endif %}
                                         {% endif %}
                                     </tr>
                                 {% endif %}
