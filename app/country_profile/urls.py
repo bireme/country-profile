@@ -3,6 +3,9 @@ from django.urls import path, include
 
 from main import views as main_views
 
+
+admin.site.site_header = 'Pharmaceutical and Health Technology Country Profile'
+
 urlpatterns = [
 
     path('', main_views.index, name='index'),
