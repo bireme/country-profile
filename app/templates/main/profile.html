@@ -9,11 +9,26 @@
 {% block "content" %}
 <main id="main_container" class="padding2">
     <div class="container">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'country' country.code %}">{{country.name}}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Profile</li>
-        </ol>
+        <nav aria-label="breadcrumb" class="d-print-none">
+            <div class="float-end d-print-none">
+                <a href="#" onclick="javascript:window.print()" class="btn btn-sm btn-outline-secondary" >
+                    <i class="fa-solid fa-print"></i> print/pdf version
+                </a>
+            </div>
+            <ol class="breadcrumb d-print-none">
+                <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'country' country.code %}">{{country.name}}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            </ol>
+        </nav>
+        <div class="d-none d-print-block">
+            <div class="row">
+                <div class="col-1"><img src="{% static 'img/' %}{{country.code}}-flag.jpg" class="img-fluid rounded" alt=""></div>
+                <div class="col-11"><h1>{{country}}</h1></div>
+            </div>
+            <hr class="border-primary border-3 opacity-25">
+            {{ country_profile.description|safe }}
+        </div>
         <hr class="border-primary border-3 opacity-25">
         <div class="row">
             <div class="col-md-8 col-lg-9 order-md-2">
@@ -61,7 +76,7 @@
                                         {% if country_indicators_ids|has_data:indicator.code %}
                                             {{ country_indicators_data|display_data:indicator.code|safe }}
                                             {% if user.is_authenticated %}
-                                            <td>
+                                            <td class="d-print-none">
                                                 <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}', 'update'); return false">edit</a>
                                             </td>
                                             {% endif %}
@@ -69,7 +84,7 @@
                                             <td></td>
                                             <td></td>
                                             {% if user.is_authenticated %}
-                                            <td>
+                                            <td class="d-print-none">
                                                 <a href="#" onclick="javascript:open_create_data('{{country_profile.id}}', '{{indicator.id}}'); return false">edit</a>
                                             </td>
                                             {% endif %}
@@ -93,7 +108,7 @@
 
                 {% endfor %}
             </div>
-            <div class="col-md-4 col-lg-3 order-md-1 flag-title">
+            <div class="col-md-4 col-lg-3 order-md-1 flag-title d-print-none">
                 <div class="sticky-top">
                     <div class="row">
                         <div class="col-3"><img src="{% static 'img/' %}{{country.code}}-flag.jpg" class="img-fluid rounded" alt=""></div>

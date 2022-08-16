@@ -110,3 +110,28 @@
     border-color: #f5c6cb;
 	color: #000;
 }
+
+@media print {
+	#header, #footer{
+		padding: 10px;
+	}
+	#header-title{
+		font-size: 18px;
+	}
+	#logo-opas img{
+		max-height: 80px!important;
+	}
+	.accordion-button{
+		background: #fff!important;
+		color: #000!important;
+	}
+	.accordion-button:not(.collapsed)::after{
+		display: none;
+	}
+	#main_container{
+		padding: 10px;
+	}
+	#footer{
+		display: none;
+	}
+}
