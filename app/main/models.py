@@ -161,7 +161,7 @@ class CountryIndicatorData(models.Model):
     year = models.SmallIntegerField(_('Year'))
     info_text = models.CharField(_('Info (text)'), max_length=155, blank=True)
 
-    info_numeric = models.IntegerField(_('Info (numeric)'), blank=True, null=True)
+    info_numeric = models.DecimalField(_('Info (numeric)'), max_digits=19, decimal_places=2, default=0, blank=True, null=True)
     info_percent = models.DecimalField(_('Info (percentage)'), max_digits=5, decimal_places=2, default=0, validators=PERCENTAGE_VALIDATOR, blank=True, null=True)
     info_yesno = models.BooleanField(_('Info (Yes/No)'), choices=BOOLEAN_CHOICES, null=True, blank=True)
 
@@ -173,7 +173,7 @@ class CountryIndicatorData(models.Model):
         if self.info_text:
             data = self.info_text
         elif self.info_numeric:
-            data = '{:,}'.format(self.info_numeric)
+            data = '{:,}'.format(self.info_numeric).rstrip('0').rstrip('.')
         elif self.info_percent:
             data = "{}%".format(self.info_percent)
         elif self.info_yesno != None:
