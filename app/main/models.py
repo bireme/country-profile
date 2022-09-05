@@ -174,7 +174,7 @@ class CountryIndicatorData(models.Model):
         if self.info_text:
             data = self.info_text
         if self.info_longtext:
-            data = self.info_longtext
+            data = self.info_longtext.replace('\n', '<br/>')
         elif self.info_numeric:
             data = '{:,}'.format(self.info_numeric).rstrip('0').rstrip('.')
         elif self.info_percent:
