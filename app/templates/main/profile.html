@@ -74,7 +74,7 @@
                                         <td>{{ indicator.code }}</td>
                                         <td>{{ indicator.name }}</td>
                                         {% if country_indicators_ids|has_data:indicator.code %}
-                                            {{ country_indicators_data|display_data:indicator.code|safe }}
+                                            {{ country_indicators_data|display_data:indicator.code|safe|linebreaks }}
                                             {% if user.is_authenticated %}
                                             <td class="d-print-none">
                                                 <a href="#" onclick="javascript:open_update_data('{{country_indicators_ids|get_country_indicator_id:indicator.code}}', 'update'); return false">edit</a>
